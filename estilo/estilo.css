@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.barraDeNavegaçao {
+    overflow: hidden;
+    background-color: #000;
+  }
+
+  .barraDeNavegaçao a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .caimento {
+    float: left;
+    overflow: hidden;
+  }
+
+  .caimento .botaodecair {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .barraDeNavegaçao a:hover,
+  .caimento:hover .botaodecair {
+    background-color: #777;
+  }
+
+  .conteudoDeCaida {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .conteudoDeCaida a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .caimento:hover .conteudoDeCaida {
+    display: block;
+  }
+
+  .login:last-child {
+    float: right;
+  }
+nav{
+    width: 100%;
+    background-color: rgb(248, 215, 172);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, 50px)
+
+}
+header ul{
+    list-style-type: none;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+nav ul li{
+    width: 100%;
+}
+nav ul li a:hover{
+    background-color: #5e482e;
+    color: white;
+    padding: 4px;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+}
+/*janelas para navbar midias sociais e outros
+ainda vou rever a questão relacionada a hover no drop da ul li*/
+
+.logo{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 100%;
+    margin: 10px;
+}
+.logo h1{
+    font-size: 20px;
+    width: 60%;
+}
+.banner_principal{
+    width: 100%;
+    height: 400px;
+}
+/*banner principal*/
+.banner{
+    width: 100%;
+    height: 400px;
+
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*corpo do site, começando com serviços externos*/
+
+/*em serviço de atualização*/
+.serviços{
+    height: 200px;
+    align-items: center;
+    background-color: #fdfdfd;
+}
+.serviços ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-rows: repeat(1, 100px);
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #cccccc;
+}   
+.serviços li{
+    height: 60%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5PX;
+    
+}
+li img{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    
+
+}
+/*corpo do site*/
+.container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 300px));
+    grid-template-rows:repeat(1, 300px);
+    justify-content: space-evenly;
+    gap: 20px;
+    height: 100%;
+    background-color: #fdfdfd;
+}
+.card_servico{
+    height: 250px;
+    width: 300px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.141);
+}
+.imagem{
+    height: 60%;
+}
+.imagem img{
+    width: 100%;
+    height: 100%;
+}
+.texto{
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.botao{
+    height: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    text-align: right;
+}
+.botao button{
+    height: 30px;
+    width: 120px;
+    background-color: rgba(153, 205, 50, 0);
+    border: 1px solid green;
+    color: green;
+    border-radius: 5px;
+}
+
+/* botão com link*/
+button a{
+    color: green;
+    text-decoration: none;
+    font-size: 20px;
+}
+.botao button h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botao button:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    transition: 0.5s;
+}
+.separacao{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-spacing: 10px;
+    color:rgb(97, 95, 31);
+}
+.separacao h6{
+    border-bottom: 2px solid burlywood;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+/*pacotes*/
+figure{
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(auto-fit, minmax(322px, 200px));
+    grid-template-rows:repeat(2, 200px);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+/*configurações para pacotes, carrosel*/
+.pacotes{
+    height: 120px;
+    margin: 10px;
+}
+.imagens_pacote{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    position: relative;
+    scroll-snap-type: x mandatory;
+}
+.imagens_pacote img{
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+    position: sticky;
+    left: 0;
+    scroll-snap-align: start;
+}
+/*final*/
+
+.local_pacote{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 16%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.141);
+}
+.local_pacote button{
+    padding: 2px;
+    margin-right: 2px;
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    border-radius: 2px;
+}
+.local_pacote button:hover{
+    background-color: green;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/*footer*/
+.info_footer{
+    border: 1px solid black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #5e482e;
+}
+.info_footer p{
+    font-size: 15px;
+    color: white;
+}
+.info_footer h6 {
+    font-size: 15px;
+    color: white;
+}
+
+/*cadastro para cada card de venda*/
+.geral{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+}
+/*primeira parte do sistema de agendamento, onde vais ser colocado a imagem principal do pacote selecionado*/

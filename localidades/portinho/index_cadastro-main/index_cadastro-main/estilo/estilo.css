@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+article{
+    width: 99%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*cabeçalho do site */
+header{
+    height: 40%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f5fffb;
+}
+.banner{
+    display: flex;
+}
+.banner h1{
+    margin-top: 20px;
+    margin-left: 5px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* imagem perfil do card selecionado, com o nome do local*/
+.imagem-banner{
+    border: 1px solid rgba(0, 0, 0, 0.282);
+    height: 140px;
+    width: 140px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.imagem-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-superior-direito{
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+/*caixa de aviso sobre a quantida de pessoas*/
+.caixa-aviso{
+    border: 1px solid green;
+    border-radius: 2px;
+    height: 60%;
+    width: 14%;
+    margin-right: 5px;
+    display: grid;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-aviso h2{
+    font-size: 13px;
+    padding: 3px;
+    color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* imagens em carrousel, imagem que vai mostrar os locais dos respectivos lugares selecionados*/
+section{
+    width: 80%;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cccccc;
+}
+.carrousel{
+    background-color: #cccccc;
+    width: 90%;
+    height: 80%;
+}
+
+/*preço e informações do produto*/
+.container{
+    display: grid;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(1, 80px);
+    border-radius: 5px;
+}
+.text1{
+    border-radius: 5px;
+}
+.text1 h3{
+    font-size: 20px;
+}
+.preco{
+    background-color: #e8e6e6;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preco h4{
+    font-size: 25px;
+}
+
+/* cartão para cadastro*/
+figure{
+    width: 80%;
+    background-color: #d2d1d1;
+    
+}
+figure h4{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.568);
+    margin-top: 10px;
+    width: 20%;
+    margin-bottom: 5px;
+}
+.cartao-cadastro{
+    height: 350px;
+    padding-left: 5px;
+}
+
+.add-name{
+    height: 115px;
+}
+.add-name h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.add-name input{
+    height: 30px;
+    width: 240px;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    
+}
+.add-end{
+    height: 115px;
+}
+.add-end h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.add-end input{
+    height: 30px;
+    width: 240px;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+}
+.add-docum{
+    height: 115px;
+}
+.add-docum h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.add-docum input{
+    height: 30px;
+    width: 240px;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+}
+
+/*estilização dos meio de pagamento*/
+.cartao{
+    border: 1px solid rgb(177, 176, 190);
+    background-color: #5c5c69;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(100px, 400px));
+    grid-template-rows:repeat(1, 300px);
+}
+.lado{
+    height: 100%;
+    padding-left: 5px;
+}
+.titular-card{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.categoria{
+    height: 25px;
+}
+.categoria h5{
+    color: aliceblue;
+}
+.nome-titular{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.nome-titular input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+}
+.num-card{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.num-card input{
+    height: 30px;
+    width: 16%;
+}
+.senha-cartao{
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+.sc{
+
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.sc input{
+    height: 30px;
+    width: 16%;
+}
+/*estilização de outros metodos de pagamento*/
+.pix{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.chave{
+    border: 1px solid black;
+    height: 60px;
+}
+.outros{
+    height: 80px;
+    display: flex;
+}
+.img-boleto{
+    border: 1px solid black;
+    height: 50%;
+    width: 20%;
+}
+.janela{
+    width: 600px;
+    height: 300px;
+    background-color: aliceblue;
+    display: none;
+    position: absolute;
+}
+.img-boleto:hover{
+    .janela{
+        display: block;
+        opacity: 1;
+    }
+}
+.janela img{
+    width: 100%;
+    height: 100%;
+}
+.qr-code{
+    height: 50%;
+    width: 20%;
+    border: 1px solid black;
+}
+.qr-code:hover{
+    .janela{
+        display: block;
+    }
+}
+.botao01{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.botao01 h6{
+    border: 1px solid green;
+    color: green;
+    border-radius: 5px;
+    height: 25%;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+    padding: 2px;
+    background-color: white;
+}
+.botao01 a{
+    text-decoration: none;
+    color: green;
+}
+.pix .categoria h5{
+    color: #000000;
+}
